@@ -18,6 +18,7 @@ export default StyleSheet.create({
   label: {
     color: 'white',
     fontWeight: '700',
-    fontFamily: Fonts.MontserratRegular,
+    fontFamily: Fonts.MontserratBold,
+    fontSize: 16,
   },
 });

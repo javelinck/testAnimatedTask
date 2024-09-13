@@ -12,6 +12,7 @@ import Animated, {
 import styles from './styles.ts';
 import {getRandomAngle} from '../../helpers/get-random-angle.helper.ts';
 import {ITEMS} from '../../constants';
+import {Colors} from '../../styles/colors.ts';
 
 const AnimatedComponent = () => {
   const createAxisStyle = (size: number) =>
@@ -78,7 +79,7 @@ const AnimatedComponent = () => {
 
   return (
     <View style={styles.container}>
-      {axisItems.map((item, index) => (
+      {axisItems.map(item => (
         <Animated.View
           key={item.delay}
           entering={FadeInDown.delay(item.delay).springify()}
@@ -103,7 +104,11 @@ const AnimatedComponent = () => {
         return (
           <Animated.Image
             key={item.id}
-            style={[styles.item, animatedItemStyle]}
+            style={[
+              styles.item,
+              animatedItemStyle,
+              {width: item.sideSize, height: item.sideSize},
+            ]}
             source={item.image}
           />
         );
@@ -111,7 +116,7 @@ const AnimatedComponent = () => {
 
       <Animated.View style={[styles.card, cardStyle]}>
         <LinearGradient
-          colors={['yellow', '#FFD700', '#FFD700', 'yellow']}
+          colors={[Colors.yellow, Colors.orange, Colors.orange, Colors.yellow]}
           locations={[0, 0.2, 0.8, 1]}
           start={{x: 0, y: 0}}
           end={{x: 0.9, y: 1}}

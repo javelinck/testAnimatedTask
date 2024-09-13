@@ -7,6 +7,7 @@ export default StyleSheet.create({
     fontWeight: '600',
     textTransform: 'uppercase',
     lineHeight: 45.6,
+    fontFamily: Fonts.MontserratBold,
   },
   text: {
     color: 'black',

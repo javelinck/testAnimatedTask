@@ -2,7 +2,7 @@ import {Controller, useForm} from 'react-hook-form';
 import {AuthFormType} from '../../types/auth-form.type.ts';
 import {yupResolver} from '@hookform/resolvers/yup';
 import React, {useCallback, useRef} from 'react';
-import {ScrollView, Text, TextInput, View} from 'react-native';
+import {ScrollView, TextInput, View} from 'react-native';
 import {AnimatedComponent} from '../../components/animated-component';
 import {validation} from '../../helpers/validation.helper.ts';
 import {useCreateUserMutation} from '../../store/services/auth.api.ts';
@@ -62,7 +62,7 @@ const AuthScreen = () => {
                   onSubmitEditing={() => refName.current?.focus()}
                   onChangeText={onChange}
                   style={styles.textInput}
-                  placeholder="Enter email"
+                  placeholder="Email"
                   keyboardType="email-address"
                 />
                 <TextComponent isError text={errors.email?.message ?? ''} />
@@ -79,7 +79,7 @@ const AuthScreen = () => {
                   onChangeText={onChange}
                   ref={refName}
                   style={styles.textInput}
-                  placeholder="Enter name"
+                  placeholder="Name"
                 />
                 <TextComponent isError text={errors.name?.message ?? ''} />
               </>
