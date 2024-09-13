@@ -14,6 +14,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-testAnimatedTask-testAnimatedTaskTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-testAnimatedTask-testAnimatedTaskTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9C775CC741EA43198D99FE32 /* MontserratRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E9FB4ABA26A436AAAF0C48C /* MontserratRegular.ttf */; };
 		C931A9520732F06A4E293802 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A399EFCA847D412D4E567B31 /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-testAnimatedTask.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testAnimatedTask.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = testAnimatedTask/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-testAnimatedTask-testAnimatedTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAnimatedTask-testAnimatedTaskTests.release.xcconfig"; path = "Target Support Files/Pods-testAnimatedTask-testAnimatedTaskTests/Pods-testAnimatedTask-testAnimatedTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		8E9FB4ABA26A436AAAF0C48C /* MontserratRegular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MontserratRegular.ttf; path = ../src/assets/fonts/MontserratRegular.ttf; sourceTree = "<group>"; };
 		A399EFCA847D412D4E567B31 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = testAnimatedTask/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -127,6 +129,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				B853F9D48C5E49DF84E83987 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -140,6 +143,15 @@
 				00E356EE1AD99517003FC87E /* testAnimatedTaskTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B853F9D48C5E49DF84E83987 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E9FB4ABA26A436AAAF0C48C /* MontserratRegular.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -249,6 +261,7 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				C931A9520732F06A4E293802 /* PrivacyInfo.xcprivacy in Resources */,
+				9C775CC741EA43198D99FE32 /* MontserratRegular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
