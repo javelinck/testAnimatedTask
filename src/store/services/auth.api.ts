@@ -11,7 +11,7 @@ export const authApi = createApi({
   endpoints: builder => ({
     createUser: builder.mutation<AuthResponseType, AuthFormType>({
       query: queryArg => ({
-        url: '/api/create',
+        url: 'api/create',
         method: 'POST',
         body: {...queryArg},
       }),
